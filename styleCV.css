@@ -1,0 +1,290 @@
+h1  { 
+    
+    font-family:    'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size:      2em; 
+    text-align:     center;
+    
+}
+
+h2  { 
+    
+    font-family:    'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size:      1em;
+
+}
+
+h3  {
+
+    font-family:    'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size:      1em; text-align: center; font-weight: normal;
+
+}
+
+p   { 
+    
+    font-family:    'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size:      1em; 
+    text-align:     justify ; 
+    padding:        0 0 0 20px; /*tabulation*/
+
+}
+
+.boxB p {
+
+    text-align:     center ; 
+    padding:        0 0 0 0px; /*tabulation*/
+
+}
+
+body { 
+    
+    margin:         25px 50px 25px 50px;
+
+    background-image: url("texture.jpg");
+    background-repeat: repeat;
+
+}
+
+li  { 
+
+    font-family:    'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:     justify; 
+    
+} 
+
+span.gras {  /*ou bien "li span" si seulement dans li */
+    
+    font-weight: bold;
+
+}
+
+span.italique {  /*ou bien "li span" si seulement dans li */
+    
+    font-style:italic;
+
+}
+
+a   {
+
+    font-family:        'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size:          1em; text-align: center; font-weight:bold ;
+    text-decoration:    none;
+    color:              blue;
+    /*font-style:         italic;*/
+    
+}
+
+a:hover {
+
+   text-decoration:     underline;
+   color:               green;
+
+} /* Apparence au survol des liens */
+
+
+.image-gauche { 
+
+    float:          left;  
+    vertical-align: top; 
+    width:          300px;
+
+} 
+
+.photo_oiseau {
+
+    width : 100px ;
+    /* align-items: center;
+    justify-content: center ; */
+
+}
+
+.boxA {
+    
+   display :       flex ;
+   flex-direction:  wrap;
+   flex-wrap:       wrap;
+   justify-content: space-around ;
+   align-items:     center;
+   margin :         25px ;  /*marge autour box A ici un peu plus grande pour espacer image avec box en-dessous */ 
+
+}
+
+.el:nth-child(2) {   
+
+    background:     honeydew; 
+    padding :       40px; /*encadré titre pour marge interieur sinon collé au texte */
+    border-radius : 3em 1em 4em 1em / 2em 3em 1em 3em ; 
+    box-shadow:     12px 12px 2px 1px rgba(107, 107, 122, 0.342); 
+
+}
+
+.boxB{
+
+   display:        flex ;
+   flex-wrap:      wrap;
+   justify-content: wrap ;  /*center*/
+   align-content: justify ; /*stretch*/
+   /*padding :        20px;  marges interieures */
+   margin :        10px ;    
+
+}
+
+
+
+ .elem_1 {
+
+    border:         1px solid rgb(250, 240, 231);
+    width :         31% ;
+    background:      #FFFDD2;
+    opacity :       0.85 ;
+    text-align: center ; /* mystère : ça a centré l'image*/
+    align-content: center;
+    align-items: center;
+    flex: 1;
+
+}
+
+.elem_2 {
+
+    border:         1px solid rgb(250, 240, 231);
+    width :         22% ;
+    background:      #FFFDD2;
+    opacity :       0.85 ;
+    vertical-align: middle;
+    flex: 1;
+    
+}
+
+
+.elem_3 {
+
+    border:         1px solid rgb(250, 240, 231);
+    width:          46.5% ;
+    background:      #FFFDD2;
+    opacity :       0.85 ;
+    vertical-align: middle;
+    flex:2;
+
+} 
+
+
+
+.boxC   {
+
+    display:               flex ;
+    flex-direction:        column;
+    align-items:           center;
+    flex-wrap:             wrap;
+    justify-content:       space-around ;
+    background:            #FFEDE9 ;
+    margin :               10px ;
+    opacity :              0.95 ; 
+    border:                2px solid rgb(250, 247, 244);
+    padding-bottom:        12px; /* image en bas alors on met plus d'espace avec la bordure du bas*/
+
+}
+
+.boxC img {
+
+    height: 761px;
+    width: 1284px;
+    
+}
+
+.boxD   {
+    
+    display:               flex ;
+    flex-direction:        column;
+    flex-wrap:             wrap;
+    justify-content:       space-around ;
+    text-align:            justify center;
+    padding :              20px; /*marges interieures */
+    background:            #E8FCFF ;
+    margin :               10px ;  /*!!! pas compris à quoi ça sert mais même largeur de bloc que les autres si on le garde !!! */
+    opacity :              0.85 ;
+    border:                2px solid rgb(250, 247, 244);
+
+}
+
+.boxE   {
+    
+    display:            flex ;
+    flex-wrap:          wrap;
+    flex-direction:     column;
+    justify-content:    center ;
+    align-items:        center;
+    background:         #F7F7F7 ;
+    margin :            10px ;
+    opacity :           0.75 ; 
+    border:             2px solid rgb(250, 247, 244); 
+
+}
+
+.contenufooter {
+
+    text-align:     center;
+
+}
+
+
+@media all and (max-width: 1080px) {  /* pour réduire marges sur écrans de téléphone soit max 1080 px */
+        
+    body { 
+            
+    margin:          10px 1px 10px 1px;
+
+    }  
+
+
+    .elem_1 {
+
+        border:         1px solid rgb(250, 240, 231);
+        /*width :         31% ;*/
+        background:      #FFFDD2;
+        opacity :       0.85 ;
+        text-align: center ; /* mystère : ça a centré l'image*/
+        align-content: center;
+        align-items: center;
+        flex: 2.5 ;
+    
+    }
+    
+    .elem_2 {
+    
+        border:         1px solid rgb(250, 240, 231);
+        /*width :         22% ;*/
+        background:      #FFFDD2;
+        opacity :       0.85 ;
+        vertical-align: middle;
+        flex: 2.5;
+        
+    }
+    
+    
+    .elem_3 {
+    
+        border:         1px solid rgb(250, 240, 231);
+        /*width:          46.5% ;*/
+        background:      #FFFDD2;
+        opacity :       0.85 ;
+        vertical-align: middle;
+        flex:4;
+    
+    } 
+
+}
+
+
+@media all and (max-width: 1417px) { 
+
+    .boxC img {
+
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+}
+    
+   
